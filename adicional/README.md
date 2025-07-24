@@ -44,3 +44,15 @@ Desarrollado por 14-Brandon para la gestión de una tienda de maquillaje.
 
 ## Licencia
 Este proyecto es de uso educativo y puede ser modificado según las necesidades del usuario.
+
+## Uso de Git y .gitignore
+
+Para mantener tu repositorio limpio y seguro, utiliza el archivo `.gitignore` incluido. Este archivo evita que archivos sensibles, temporales o de configuración local se suban al repositorio. Recuerda inicializar tu repositorio con:
+
+```bash
+git init
+git add .
+git commit -m "Primer commit"
+```
+
+Y revisa el `.gitignore` antes de subir cambios para evitar exponer información privada o innecesaria.

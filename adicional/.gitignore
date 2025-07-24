@@ -1,0 +1,33 @@
+# Archivos y carpetas a ignorar para proyectos PHP en XAMPP
+
+# Configuración local
+.env
+*.env
+
+# Archivos de base de datos
+*.sql
+*.sqlite
+*.db
+
+# Archivos temporales y de caché
+*.log
+*.tmp
+*.bak
+.cache/
+
+# Directorios del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de IDE
+.vscode/
+.idea/
+
+# Archivos de sistema de XAMPP
+xampp/
+
+# Carpeta de uploads (si existe)
+uploads/
+
+# Otros
+node_modules/
