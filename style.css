@@ -1,0 +1,250 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+}
+
+/* Contenedor principal */
+.main-content {
+    flex: 1; /* Hace que el contenido crezca y empuje el footer hacia abajo */
+}
+
+/* === BANNER SUPERIOR === */
+.top-banner {
+    background-color: #eac4d5;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #5a3d5c;
+}
+
+/* === NAVEGACIÓN === */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #f8dae4;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #8b5e83;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    display: inline;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #5a3d5c;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #c05c8b;
+}
+
+/* Íconos */
+.icons i {
+    margin-left: 15px;
+    cursor: pointer;
+    color: #5a3d5c;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+.icons i:hover {
+    color: #c05c8b;
+}
+
+/* === SECCIÓN HERO === */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10%;
+    background-color: #fde1eb;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    color: #8b5e83;
+    margin-bottom: 10px;
+}
+
+.hero-text .highlight {
+    color: #c05c8b;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-text .subtext {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #c05c8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.hero-text .btn:hover {
+    background-color: #8b5e83;
+}
+
+/* Imagen en sección Hero */
+.hero-image img {
+    max-width: 100%;
+    width: 500px; /* Aumentado de 400px a 500px */
+    border-radius: 1000px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === CONTENEDOR FORMULARIO === */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group label {
+    font-weight: bold;
+    color: #6d476c;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f2c1d1;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fdeef4;
+    color: #6d476c;
+}
+
+/* === BOTONES === */
+.btn {
+    background: #c45a82;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #a3476b;
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8dae4;
+    color: #5a3d5c;
+    font-size: 14px;
+    margin-top: auto; /* Asegura que el footer siempre esté al final */
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text .subtext {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        width: 450px; /* Ajuste para móviles */
+    }
+
+    .main-nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
