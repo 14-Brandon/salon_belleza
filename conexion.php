@@ -1,10 +1,10 @@
 <?php
 $host = "localhost";
-$user = "root"; // Cambia si es necesario
-$password = ""; // Cambia si es necesario
-$database = "formulario"; // Asegúrate de que sea el nombre correcto
+$user = "root"; 
+$password = ""; 
+$database = "formulario";
 
-// Crear conexión
+
 $conexion = mysqli_connect($host, $user, $password, $database);
 
 // Verificar conexión
